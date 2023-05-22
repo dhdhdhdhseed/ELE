@@ -1,0 +1,37 @@
+.common-box-shadow{
+    box-shadow: 1px 1px 1px 1px #bbb;
+}
+
+//布局，
+.DN_card_row {
+	width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-between;
+	.DN_card_row_2_list {
+		width: 48%;
+		padding: 2% 0;
+	}
+	.DN_card_row_1_list {
+		width: 100%;
+		padding: 2% 0 ;
+	}
+	.DN_card_row_5_list {
+		width: 24%;
+		// padding: 2% 0 ;
+	}
+}
+
+.ELE_common-pg{
+    padding: 0 50px;
+}
+
+.pg-30{
+    padding: 30px;
+}
+.pg-20{
+    padding: 20px;
+}
+.pg-10{
+    padding: 10px;
+}

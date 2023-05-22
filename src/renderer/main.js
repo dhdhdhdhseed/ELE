@@ -7,6 +7,7 @@ import 'ant-design-vue/dist/antd.css'
 import * as antIcons from '@ant-design/icons-vue'
 import api from '@/api'
 import '@/styles/index.scss'
+import "@/assets/css/style.scss"
 
 const app = createApp(App)
 

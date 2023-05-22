@@ -13,11 +13,11 @@ Object.assign(config, env)
 // }
 
 if (config.VUE_APP_ENV === 'development') {
-  config.host = 'http://192.168.148.174:8080'
+  config.host = 'http://172.16.25.111:8080'
 } else if (config.VUE_APP_ENV === 'test') {
-  config.host = 'http://192.168.148.175:8080'
+  config.host = 'http://172.16.25.111:8080'
 } else if (config.VUE_APP_ENV === 'production') {
-  config.host = 'http://192.168.148.176:8080'
+  config.host = 'http://172.16.25.111:8080'
 }
 
 export default config

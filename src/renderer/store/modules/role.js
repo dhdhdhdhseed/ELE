@@ -6,7 +6,8 @@ const role = {
     menusAll: [],
     collapsed: false,
     levelObj: {},
-    breadcrumb: []
+    breadcrumb: [],
+    homeMenus:[],
   },
   mutations: {
     FIND_MENU: (state, val) => {
@@ -30,6 +31,7 @@ const role = {
     SET_MENU_ALL: (state, menus) => {
       state.menusAll = menus
       state.menus = menus
+      state.homeMenus = menus[2]
       console.log('菜单:', menus)
     },
     SET_COLLAPSED: (state, flag) => {
@@ -59,7 +61,8 @@ const role = {
   getters: {
     collapsed: state => state.collapsed,
     menus: state => state.menus,
-    breadcrumb: state => state.breadcrumb
+    breadcrumb: state => state.breadcrumb,
+    homeMenus: state => state.homeMenus,
   }
 }
 export default role

@@ -1,29 +1,41 @@
 <template>
-  <platHeader></platHeader>
-  <!-- 导航栏 -->
-  <div class="flatHome-nav">
-
+  <div class="home">
+    <div class="DN_card_row" >
+      <div class="DN_card_row_5_list" v-for="item in commonVideo.list" :key="item.id">
+        <videoCard :cardItem="item"></videoCard>
+      </div>
+    </div>
   </div>
-  <div class="flatHome-content">
-    <router-view></router-view>
-  </div>
-  <platFooter></platFooter>
 </template>
 
 <script>
-import platHeader from "./components/platHeader.vue"
-import platFooter from "./components/platFooter.vue"
+import videoCard from "@/components/resourceCard/videoCard.vue"
 export default {
+  name: "platHome",
   components: {
-    platHeader,
-    platFooter
+    videoCard,
+  },
+  data() {
+    return {
+      commonVideo: {
+        title: '视频区',
+        list: []
+      }
+    }
+  },
+  mounted() {
+    this.getData()
+  },
+  methods: {
+    getData() {
+      this.$api('http://172.16.25.111:4003/platform/commonResources/index.json', {}, { method: 'get' }).then((result => {
+        this.commonVideo.list = result
+        console.log('请求数据',result, this.commonVideo.list);
+      }))
+    },
   }
-
 }
 </script>
 
 <style lang="scss">
-.flatHome-nav {
-  display: flex;
-}
 </style>
