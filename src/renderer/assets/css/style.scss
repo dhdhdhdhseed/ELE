@@ -7,18 +7,18 @@
 	width: 100%;
     display: flex;
     flex-flow: row wrap;
-	justify-content: space-between;
+	// justify-content: space-between;
 	.DN_card_row_2_list {
 		width: 48%;
-		padding: 2% 0;
+		padding: 2%;
 	}
 	.DN_card_row_1_list {
 		width: 100%;
-		padding: 2% 0 ;
+		padding: 2% ;
 	}
 	.DN_card_row_5_list {
-		width: 24%;
-		// padding: 2% 0 ;
+		width: 20%;
+		padding: 1% ;
 	}
 }
 

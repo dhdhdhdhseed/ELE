@@ -1,8 +1,8 @@
 <template>
   <div class="videoCard">
-    <img :src="'http://172.16.25.111:4003/'+cardItem.src" alt="">
+    <img src="@/assets/local/img/img1.png" alt="">
     <div>
-      <div>{{cardItem.resourcesName}}</div>
+      <div>视频资源{{cardItem}}</div>
     </div>
   </div>
 </template>

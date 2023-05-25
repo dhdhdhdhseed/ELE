@@ -24,6 +24,7 @@
             <div>个人中心</div>
             <div>资源管理</div>
             <div>平台管理</div>
+            <div>后台管理</div>
           </div>
         </div>
       </div>
